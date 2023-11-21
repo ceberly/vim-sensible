@@ -133,9 +133,9 @@ endif
 if !(exists('g:did_load_filetypes') && exists('g:did_load_ftplugin') && exists('g:did_indent_on'))
   filetype plugin indent on
 endif
-if has('syntax') && !exists('g:syntax_on')
-  syntax enable
-endif
+"if has('syntax') && !exists('g:syntax_on')
+" syntax enable
+"endif
 
 if empty(mapcheck('<C-U>', 'i'))
   inoremap <C-U> <C-G>u<C-U>
